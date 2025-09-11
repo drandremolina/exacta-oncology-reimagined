@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Phone, MapPin } from "lucide-react";
+import exactaLogo from "@/assets/exacta-logo.png";
 
 export const Header = () => {
   return (
@@ -28,10 +29,12 @@ export const Header = () => {
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center justify-between">
             <div className="flex items-center gap-3">
-              <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center">
-                <div className="w-6 h-6 bg-primary-foreground rounded-full flex items-center justify-center">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                </div>
+              <div className="w-10 h-10 flex items-center justify-center">
+                <img 
+                  src={exactaLogo} 
+                  alt="Exacta Oncologia Logo" 
+                  className="w-10 h-10 object-contain"
+                />
               </div>
               <div>
                 <h1 className="text-xl font-bold text-primary">
