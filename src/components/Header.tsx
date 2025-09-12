@@ -15,11 +15,18 @@ export const Header = () => {
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
-              <span>Rua Adma Jafet, 74, cj 161 - Bela Vista, SP</span>
+              <a 
+                href="https://maps.app.goo.gl/Cb8W9j2LFWLt1uE38" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-secondary transition-colors"
+              >
+                Rua Adma Jafet, 74, cj 161 - Bela Vista, SP
+              </a>
             </div>
           </div>
           <div className="hidden md:flex items-center text-xs">
-            <span>Segunda a Sexta: 8h às 18h</span>
+            <span>Segunda a Sexta: 8h às 19h</span>
           </div>
         </div>
       </div>
@@ -61,8 +68,14 @@ export const Header = () => {
               </a>
             </div>
 
-            <Button variant="appointment" size="lg">
-              Agendar Consulta
+            <Button 
+              variant="appointment" 
+              size="lg"
+              asChild
+            >
+              <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer">
+                Agendar Consulta
+              </a>
             </Button>
           </nav>
         </div>

@@ -67,10 +67,15 @@ export const Footer = () => {
               </div>
               <div className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 mt-0.5" />
-                <span>
+                <a 
+                  href="https://maps.app.goo.gl/Cb8W9j2LFWLt1uE38" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="hover:text-secondary transition-colors"
+                >
                   Rua Adma Jafet, 74, cj 161<br />
                   Bela Vista, São Paulo - SP
-                </span>
+                </a>
               </div>
             </div>
           </div>

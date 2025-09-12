@@ -56,11 +56,16 @@ export const ContactSection = () => {
               </div>
               <div>
                 <h4 className="font-semibold text-primary mb-2">Endereço</h4>
-                <p className="text-muted-foreground">
+                <a 
+                  href="https://maps.app.goo.gl/Cb8W9j2LFWLt1uE38" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-primary transition-colors"
+                >
                   Rua Adma Jafet, 74, cj 161<br />
                   Bela Vista, São Paulo - SP<br />
                   CEP 01308-050
-                </p>
+                </a>
               </div>
             </div>
 
@@ -72,7 +77,7 @@ export const ContactSection = () => {
               <div>
                 <h4 className="font-semibold text-primary mb-2">Horário de Funcionamento</h4>
                 <p className="text-muted-foreground">
-                  Segunda a Sexta: 8h às 18h
+                  Segunda a Sexta: 8h às 19h
                 </p>
               </div>
             </div>
@@ -93,9 +98,12 @@ export const ContactSection = () => {
                 variant="appointment" 
                 size="lg" 
                 className="w-full justify-start gap-4"
+                asChild
               >
-                <MessageCircle className="w-5 h-5" />
-                Agendar via WhatsApp
+                <a href="https://wa.me/5511971644726" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5" />
+                  Agendar via WhatsApp
+                </a>
               </Button>
               
               <Button 
@@ -117,12 +125,6 @@ export const ContactSection = () => {
               </Button>
             </div>
 
-            <div className="mt-8 p-4 bg-accent/20 rounded-lg">
-              <p className="text-sm text-muted-foreground text-center">
-                📍 <strong>Localização privilegiada no centro de São Paulo</strong><br />
-                Fácil acesso por transporte público e particular
-              </p>
-            </div>
           </div>
         </div>
       </div>
