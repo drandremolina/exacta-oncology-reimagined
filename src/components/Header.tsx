@@ -54,7 +54,7 @@ export const Header = () => {
             </div>
 
             <div className="hidden md:flex items-center gap-8">
-              <a href="#inicio" className="text-foreground hover:text-primary transition-colors">
+              <a href="/" className="text-foreground hover:text-primary transition-colors">
                 Início
               </a>
               <a href="#sobre" className="text-foreground hover:text-primary transition-colors">
@@ -62,6 +62,9 @@ export const Header = () => {
               </a>
               <a href="#servicos" className="text-foreground hover:text-primary transition-colors">
                 Serviços
+              </a>
+              <a href="/blog" className="text-foreground hover:text-primary transition-colors">
+                Blog
               </a>
               <a href="#contato" className="text-foreground hover:text-primary transition-colors">
                 Contato

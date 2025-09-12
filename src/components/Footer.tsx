@@ -31,7 +31,7 @@ export const Footer = () => {
             <h4 className="font-semibold mb-4">Navegação</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/80">
               <li>
-                <a href="#inicio" className="hover:text-secondary transition-colors">
+                <a href="/" className="hover:text-secondary transition-colors">
                   Início
                 </a>
               </li>
@@ -43,6 +43,11 @@ export const Footer = () => {
               <li>
                 <a href="#servicos" className="hover:text-secondary transition-colors">
                   Serviços
+                </a>
+              </li>
+              <li>
+                <a href="/blog" className="hover:text-secondary transition-colors">
+                  Blog
                 </a>
               </li>
               <li>
