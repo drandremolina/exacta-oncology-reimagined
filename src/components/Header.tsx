@@ -41,7 +41,7 @@ export const Header = () => {
                   Exacta Centro Oncológico
                 </h1>
                 <p className="text-xs text-muted-foreground">
-                  Cuidado Especializado e Humanizado
+                  Cuidado Especializado em Oncologia
                 </p>
               </div>
             </div>

@@ -1,4 +1,5 @@
 import { Phone, Mail, MapPin } from "lucide-react";
+import exactaFooterLogo from "@/assets/exacta-footer-logo.png";
 
 export const Footer = () => {
   return (
@@ -8,17 +9,19 @@ export const Footer = () => {
           {/* Logo and Description */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-secondary rounded-lg flex items-center justify-center">
-                <div className="w-6 h-6 bg-primary-foreground rounded-full flex items-center justify-center">
-                  <div className="w-2 h-2 bg-primary rounded-full"></div>
-                </div>
+              <div className="flex items-center justify-center">
+                <img 
+                  src={exactaFooterLogo} 
+                  alt="Exacta Centro Oncológico Logo" 
+                  className="h-10 object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-lg font-bold">Exacta Centro Oncológico</h3>
               </div>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Cuidado especializado e humanizado no combate ao câncer. 
+              Cuidado especializado em oncologia no combate ao câncer. 
               Sua jornada de tratamento com a expertise e o acolhimento que você merece.
             </p>
           </div>
