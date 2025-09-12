@@ -29,10 +29,6 @@ export const ServicesSection = () => {
             <ul className="space-y-3 text-muted-foreground">
               <li className="flex items-center gap-3">
                 <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                Oncologia Clínica
-              </li>
-              <li className="flex items-center gap-3">
-                <div className="w-2 h-2 bg-secondary rounded-full"></div>
                 Cirurgia Oncológica
               </li>
               <li className="flex items-center gap-3">
