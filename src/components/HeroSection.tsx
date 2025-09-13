@@ -3,11 +3,13 @@ import heroImage from "@/assets/hero-medical.jpg";
 
 export const HeroSection = () => {
   return (
-    <section id="inicio" className="relative min-h-screen flex items-center">
+    <section id="inicio" className="relative min-h-screen flex items-center" role="banner" aria-label="Seção principal do Exacta Centro Oncológico">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroImage})` }}
+        role="img"
+        aria-label="Imagem de fundo mostrando ambiente médico profissional"
       >
         <div className="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-transparent"></div>
       </div>
@@ -28,11 +30,33 @@ export const HeroSection = () => {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-4">
-              Agendar Consulta
+            <Button 
+              variant="hero" 
+              size="lg" 
+              className="text-lg px-8 py-4"
+              asChild
+            >
+              <a 
+                href="https://wa.me/5511971644726" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                aria-label="Agendar consulta via WhatsApp"
+              >
+                Agendar Consulta
+              </a>
             </Button>
-            <Button variant="outline-medical" size="lg" className="text-lg px-8 py-4">
-              Nossos Serviços
+            <Button 
+              variant="outline-medical" 
+              size="lg" 
+              className="text-lg px-8 py-4"
+              asChild
+            >
+              <a 
+                href="#servicos"
+                aria-label="Conhecer nossos serviços médicos"
+              >
+                Nossos Serviços
+              </a>
             </Button>
           </div>
 

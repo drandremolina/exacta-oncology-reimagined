@@ -32,15 +32,17 @@ export const Header = () => {
       </div>
 
       {/* Main Header */}
-      <header className="bg-background shadow-soft sticky top-0 z-50">
+      <header className="bg-background shadow-soft sticky top-0 z-50" role="banner">
         <div className="container mx-auto px-4 py-4">
-          <nav className="flex items-center justify-between">
+          <nav className="flex items-center justify-between" role="navigation" aria-label="Menu principal">
             <div className="flex items-center gap-3">
               <div className="flex items-center justify-center">
                 <img 
                   src={exactaLogo} 
-                  alt="Exacta Oncologia Logo" 
+                  alt="Logotipo do Exacta Centro Oncológico - Cuidado especializado em oncologia" 
                   className="h-12 object-contain"
+                  width="auto"
+                  height="48"
                 />
               </div>
               <div>

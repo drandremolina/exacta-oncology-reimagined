@@ -3,7 +3,7 @@ import exactaFooterLogo from "@/assets/exacta-footer-logo.png";
 
 export const Footer = () => {
   return (
-    <footer className="bg-primary text-primary-foreground py-12">
+    <footer className="bg-primary text-primary-foreground py-12" role="contentinfo">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-3 gap-8">
           {/* Logo and Description */}
@@ -12,8 +12,10 @@ export const Footer = () => {
               <div className="flex items-center justify-center">
                 <img 
                   src={exactaFooterLogo} 
-                  alt="Exacta Centro Oncológico Logo" 
+                  alt="Logotipo do Exacta Centro Oncológico rodapé - Especialista em oncologia e cirurgia oncológica" 
                   className="h-10 object-contain"
+                  width="auto"
+                  height="40"
                 />
               </div>
               <div>
@@ -27,63 +29,88 @@ export const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div>
+          <nav aria-label="Menu de navegação do rodapé">
             <h4 className="font-semibold mb-4">Navegação</h4>
             <ul className="space-y-3 text-sm text-primary-foreground/80">
               <li>
-                <a href="/" className="hover:text-secondary transition-colors">
+                <a 
+                  href="/" 
+                  className="hover:text-secondary transition-colors"
+                  aria-label="Página inicial do Exacta Centro Oncológico"
+                >
                   Início
                 </a>
               </li>
               <li>
-                <a href="#sobre" className="hover:text-secondary transition-colors">
+                <a 
+                  href="#sobre" 
+                  className="hover:text-secondary transition-colors"
+                  aria-label="Saiba mais sobre o Exacta Centro Oncológico"
+                >
                   Sobre Nós
                 </a>
               </li>
               <li>
-                <a href="#servicos" className="hover:text-secondary transition-colors">
+                <a 
+                  href="#servicos" 
+                  className="hover:text-secondary transition-colors"
+                  aria-label="Conheça nossos serviços de oncologia"
+                >
                   Serviços
                 </a>
               </li>
               <li>
-                <a href="/blog" className="hover:text-secondary transition-colors">
+                <a 
+                  href="/blog" 
+                  className="hover:text-secondary transition-colors"
+                  aria-label="Blog com artigos sobre oncologia e saúde"
+                >
                   Blog
                 </a>
               </li>
               <li>
-                <a href="#contato" className="hover:text-secondary transition-colors">
+                <a 
+                  href="#contato" 
+                  className="hover:text-secondary transition-colors"
+                  aria-label="Entre em contato conosco"
+                >
                   Contato
                 </a>
               </li>
             </ul>
-          </div>
+          </nav>
 
           {/* Contact Info */}
-          <div>
+          <address className="not-italic">
             <h4 className="font-semibold mb-4">Contato</h4>
             <div className="space-y-3 text-sm text-primary-foreground/80">
               <div className="flex items-center gap-2">
-                <Phone className="w-4 h-4" />
-                <span>(11) 3258-3636</span>
+                <Phone className="w-4 h-4" aria-hidden="true" />
+                <a href="tel:+551132583636" className="hover:text-secondary transition-colors">
+                  (11) 3258-3636
+                </a>
               </div>
               <div className="flex items-center gap-2">
-                <Mail className="w-4 h-4" />
-                <span>contato@exactaoncologia.com.br</span>
+                <Mail className="w-4 h-4" aria-hidden="true" />
+                <a href="mailto:contato@exactaoncologia.com.br" className="hover:text-secondary transition-colors">
+                  contato@exactaoncologia.com.br
+                </a>
               </div>
               <div className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 mt-0.5" />
+                <MapPin className="w-4 h-4 mt-0.5" aria-hidden="true" />
                 <a 
                   href="https://maps.app.goo.gl/Cb8W9j2LFWLt1uE38" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="hover:text-secondary transition-colors"
+                  aria-label="Endereço do Exacta Centro Oncológico no Google Maps"
                 >
                   Rua Adma Jafet, 74, cj 161<br />
                   Bela Vista, São Paulo - SP
                 </a>
               </div>
             </div>
-          </div>
+          </address>
         </div>
 
         <div className="border-t border-primary-foreground/20 mt-8 pt-8 text-center">

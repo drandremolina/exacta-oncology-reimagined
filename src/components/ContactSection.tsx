@@ -3,17 +3,17 @@ import { Phone, Mail, MapPin, Clock, MessageCircle } from "lucide-react";
 
 export const ContactSection = () => {
   return (
-    <section id="contato" className="py-20 bg-muted">
+    <section id="contato" className="py-20 bg-muted" role="region" aria-labelledby="contact-title">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
+        <header className="text-center mb-16">
+          <h2 id="contact-title" className="text-4xl md:text-5xl font-bold text-primary mb-6">
             Entre em Contato
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Estamos aqui para cuidar de você. Entre em contato conosco para 
             agendar sua consulta ou esclarecer suas dúvidas.
           </p>
-        </div>
+        </header>
 
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Information */}
