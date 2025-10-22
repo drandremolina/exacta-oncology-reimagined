@@ -65,9 +65,6 @@ export const Header = () => {
               <a href="#servicos" className="text-foreground hover:text-primary transition-colors">
                 Serviços
               </a>
-              <a href="/blog" className="text-foreground hover:text-primary transition-colors">
-                Blog
-              </a>
               <a href="#contato" className="text-foreground hover:text-primary transition-colors">
                 Contato
               </a>

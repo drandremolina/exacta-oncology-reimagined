@@ -61,15 +61,6 @@ export const Footer = () => {
               </li>
               <li>
                 <a 
-                  href="/blog" 
-                  className="hover:text-secondary transition-colors"
-                  aria-label="Blog com artigos sobre oncologia e saúde"
-                >
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a 
                   href="#contato" 
                   className="hover:text-secondary transition-colors"
                   aria-label="Entre em contato conosco"
