@@ -23,7 +23,7 @@ export const WhyChooseUs = () => {
             <h3 className="text-2xl font-bold text-primary mb-4 text-center">
               Atendimento Personalizado
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-center">
               Cuidado personalizado focado no bem-estar e conforto do paciente e família, 
               proporcionando suporte emocional durante toda a jornada de tratamento.
             </p>
@@ -37,7 +37,7 @@ export const WhyChooseUs = () => {
             <h3 className="text-2xl font-bold text-primary mb-4 text-center">
               Tratamento Especializado
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-center">
               Equipe multidisciplinar com vasta experiência em oncologia e cirurgia oncológica, 
               focada na precisão do tratamento e nas mais avançadas técnicas médicas.
             </p>
@@ -51,7 +51,7 @@ export const WhyChooseUs = () => {
             <h3 className="text-2xl font-bold text-primary mb-4 text-center">
               Abordagem Integral
             </h3>
-            <p className="text-muted-foreground leading-relaxed">
+            <p className="text-muted-foreground leading-relaxed text-center">
               A Exacta cuida de reunir os profissionais necessários para cada caso, 
               proporcionando tratamento completo desde o diagnóstico até o acompanhamento pós-tratamento.
             </p>
