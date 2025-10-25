@@ -35,7 +35,7 @@ export const WhyChooseUs = () => {
               <Target className="w-8 h-8 text-primary-foreground" />
             </div>
             <h3 className="text-2xl font-bold text-primary mb-4">
-              Precisão Especializada
+              Tratamento Especializado
             </h3>
             <p className="text-muted-foreground leading-relaxed">
               Equipe multidisciplinar com vasta experiência em oncologia e cirurgia oncológica, 
