@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Phone, MapPin } from "lucide-react";
+import { Phone, MapPin, MessageCircle } from "lucide-react";
 import exactaLogo from "@/assets/exacta-new-logo.png";
 
 export const Header = () => {
@@ -13,6 +13,16 @@ export const Header = () => {
               <Phone className="w-4 h-4" />
               <span>(11) 3258-3636</span>
             </div>
+            <a 
+              href="https://wa.me/5511971644726" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:opacity-80 transition-opacity"
+              aria-label="Fale conosco pelo WhatsApp"
+            >
+              <MessageCircle className="w-4 h-4 text-green-500" />
+              <span>(11) 97164-4726</span>
+            </a>
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
               <a 
