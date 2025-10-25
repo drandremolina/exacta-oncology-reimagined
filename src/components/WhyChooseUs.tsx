@@ -15,6 +15,20 @@ export const WhyChooseUs = () => {
         </header>
 
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12" role="list" aria-label="Nossos diferenciais">
+          {/* Atendimento Personalizado */}
+          <article className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 transform hover:-translate-y-2" role="listitem">
+            <div className="w-16 h-16 bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mb-6" aria-hidden="true">
+              <Heart className="w-8 h-8 text-secondary-foreground" />
+            </div>
+            <h3 className="text-2xl font-bold text-primary mb-4">
+              Atendimento Personalizado
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Cuidado personalizado focado no bem-estar e conforto do paciente e família, 
+              proporcionando suporte emocional durante toda a jornada de tratamento.
+            </p>
+          </article>
+
           {/* Precisão Especializada */}
           <article className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 transform hover:-translate-y-2" role="listitem">
             <div className="w-16 h-16 bg-gradient-to-r from-primary to-primary/80 rounded-2xl flex items-center justify-center mb-6" aria-hidden="true">
@@ -26,20 +40,6 @@ export const WhyChooseUs = () => {
             <p className="text-muted-foreground leading-relaxed">
               Equipe multidisciplinar com vasta experiência em oncologia e cirurgia oncológica, 
               focada na precisão do tratamento e nas mais avançadas técnicas médicas.
-            </p>
-          </article>
-
-          {/* Atendimento Humanizado */}
-          <article className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 transform hover:-translate-y-2" role="listitem">
-            <div className="w-16 h-16 bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mb-6" aria-hidden="true">
-              <Heart className="w-8 h-8 text-secondary-foreground" />
-            </div>
-            <h3 className="text-2xl font-bold text-primary mb-4">
-              Atendimento Humanizado
-            </h3>
-            <p className="text-muted-foreground leading-relaxed">
-              Cuidado personalizado focado no bem-estar e conforto do paciente e família, 
-              proporcionando suporte emocional durante toda a jornada de tratamento.
             </p>
           </article>
 
