@@ -17,10 +17,10 @@ export const WhyChooseUs = () => {
         <div className="grid md:grid-cols-3 gap-8 lg:gap-12" role="list" aria-label="Nossos diferenciais">
           {/* Atendimento Personalizado */}
           <article className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 transform hover:-translate-y-2" role="listitem">
-            <div className="w-16 h-16 bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mb-6" aria-hidden="true">
+            <div className="w-16 h-16 bg-gradient-to-r from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mb-6 mx-auto" aria-hidden="true">
               <Heart className="w-8 h-8 text-secondary-foreground" />
             </div>
-            <h3 className="text-2xl font-bold text-primary mb-4">
+            <h3 className="text-2xl font-bold text-primary mb-4 text-center">
               Atendimento Personalizado
             </h3>
             <p className="text-muted-foreground leading-relaxed">
@@ -29,12 +29,12 @@ export const WhyChooseUs = () => {
             </p>
           </article>
 
-          {/* Precisão Especializada */}
+          {/* Tratamento Especializado */}
           <article className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 transform hover:-translate-y-2" role="listitem">
-            <div className="w-16 h-16 bg-gradient-to-r from-primary to-primary/80 rounded-2xl flex items-center justify-center mb-6" aria-hidden="true">
+            <div className="w-16 h-16 bg-gradient-to-r from-primary to-primary/80 rounded-2xl flex items-center justify-center mb-6 mx-auto" aria-hidden="true">
               <Target className="w-8 h-8 text-primary-foreground" />
             </div>
-            <h3 className="text-2xl font-bold text-primary mb-4">
+            <h3 className="text-2xl font-bold text-primary mb-4 text-center">
               Tratamento Especializado
             </h3>
             <p className="text-muted-foreground leading-relaxed">
@@ -45,10 +45,10 @@ export const WhyChooseUs = () => {
 
           {/* Abordagem Integral */}
           <article className="bg-card rounded-2xl p-8 shadow-soft hover:shadow-medium transition-all duration-300 transform hover:-translate-y-2" role="listitem">
-            <div className="w-16 h-16 bg-gradient-to-r from-accent to-accent/80 rounded-2xl flex items-center justify-center mb-6" aria-hidden="true">
+            <div className="w-16 h-16 bg-gradient-to-r from-accent to-accent/80 rounded-2xl flex items-center justify-center mb-6 mx-auto" aria-hidden="true">
               <Users className="w-8 h-8 text-accent-foreground" />
             </div>
-            <h3 className="text-2xl font-bold text-primary mb-4">
+            <h3 className="text-2xl font-bold text-primary mb-4 text-center">
               Abordagem Integral
             </h3>
             <p className="text-muted-foreground leading-relaxed">
